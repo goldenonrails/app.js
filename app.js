@@ -1,7 +1,6 @@
 const http = require("node:http");
 
 const hostname = 'app-js-mauve.vercel.app';
-const port = 3000;
 
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
@@ -9,6 +8,6 @@ const server = http.createServer((req, res) => {
     res.end('Hello, World!\n');
 });
 
-server.listen(port, hostname, () => {
+server.listen(hostname, () => {
     console.log(`Server running at http://${hostname}`);
   });
